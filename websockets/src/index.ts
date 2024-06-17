@@ -29,7 +29,6 @@ wss.on("connection", function connection(ws : WebSocket) {
             }
         }
   });
-   ws.send("Hello! Message From Server!!");
 
    ws.on('close' , () => {
     console.log("Client disconnected");

@@ -26,7 +26,6 @@ wss.on("connection", function connection(ws) {
             }
         }
     });
-    ws.send("Hello! Message From Server!!");
     ws.on('close', () => {
         console.log("Client disconnected");
         clients.delete(id);
